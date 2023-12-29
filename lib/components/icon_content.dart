@@ -1,4 +1,4 @@
-import 'package:bmi_cal/constants.dart';
+import 'package:bmi_cal/components/constants.dart';
 import 'package:flutter/material.dart';
 
 class IconCardChildContent extends StatelessWidget {

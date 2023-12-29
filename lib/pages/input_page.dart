@@ -1,10 +1,10 @@
-import 'package:bmi_cal/icon_content.dart';
-import 'package:bmi_cal/results_page.dart';
-import 'package:bmi_cal/reusable_card.dart';
-import 'package:bmi_cal/constants.dart';
+import 'package:bmi_cal/components/icon_content.dart';
+import 'package:bmi_cal/pages/results_page.dart';
+import 'package:bmi_cal/components/reusable_card.dart';
+import 'package:bmi_cal/components/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'calculator_brain.dart';
+import '../model/calculator_brain.dart';
 
 enum Gender {
   male,
@@ -26,6 +26,7 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Color(0xFF4C4F5E),
           centerTitle: true,
           title: Text(
             'Body Mass Index Calculate',

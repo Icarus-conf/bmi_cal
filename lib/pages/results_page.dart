@@ -1,4 +1,5 @@
 import 'package:bmi_cal/components/reusable_card.dart';
+import 'package:bmi_cal/components/text_format.dart';
 import 'package:flutter/material.dart';
 
 import '../components/constants.dart';
@@ -28,24 +29,33 @@ class ResultsPage extends StatelessWidget {
             ),
             Expanded(
               child: ReusableCard(
-                colour: activeCardColor,
+                colour: inactiveCardColor,
                 cardChild: Container(
                   width: double.infinity,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      Text(
-                        resultText.toUpperCase(),
-                        style: kResultTextStyle,
+                      PoppinsText(
+                        text: resultText.toUpperCase(),
+                        fontS: 24,
+                        fontWeight: FontWeight.w700,
+                        color: Color(0xFF87F5FB),
                       ),
                       Text(
                         bmiResult,
                         style: kBmiTextStyle,
                       ),
-                      Text(
-                        interpretation,
-                        textAlign: TextAlign.center,
-                        style: kTextStyle,
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          left: 25.0,
+                          right: 25.0,
+                        ),
+                        child: PoppinsText(
+                          text: interpretation,
+                          fontS: 16,
+                          fontWeight: FontWeight.w600,
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                     ],
                   ),

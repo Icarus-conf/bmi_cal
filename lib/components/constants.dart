@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 const bottomContainerHeight = 80.0;
-const activeCardColor = Color.fromARGB(255, 89, 99, 95);
+const activeCardColor = Color.fromARGB(255, 97, 103, 107);
 const inactiveCardColor = Color(0xFF222725);
 const bottomContainerColor = Color(0xFF6A5D7B);
 
